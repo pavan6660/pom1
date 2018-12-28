@@ -9,23 +9,15 @@ public class pom
 {
 	WebDriver driver;
 			
-	
 	By username=By.xpath("//*[@id=\'txtuId\']");
 	By password=By.xpath("//*[@id=\'txtPword\']");
 	By submit=By.xpath("//*[@id=\'login\']");
-	
-	
-	
-	
-	
+		
 	public  pom(WebDriver driver)
 	{
 		this.driver=driver;
 	}
-		
-		
-		
-		
+			
 		public void loginpage(String userid,String pass ) throws Exception
 		{
 driver.findElement(username).sendKeys(userid);
